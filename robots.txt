@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://hiagofullstack.github.io/wp-sitemap.xml
+Sitemap: https://h7midia.dev/wp-sitemap.xml
