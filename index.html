@@ -1,11 +1,936 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Minha página no Github Pages 2</h1>
-</body>
+	<meta charset="UTF-8">
+			<title>H7Mídia – Desenvolvimento de sites, sistemas, aplicativos, bots e automação…</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<title>H7Mídia – Desenvolvimento de sites, sistemas, aplicativos, bots e automação…</title>
+
+
+<style id="wp-block-library-inline-css">
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #9DFF20;--wp--preset--color--secondary: #345C00;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.227), 1.125rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.227), 1.875rem);--wp--preset--font-size--x-large: 2.25rem;--wp--preset--font-size--xx-large: clamp(4rem, 4rem + ((1vw - 0.2rem) * 10.909), 10rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: clamp(1.5rem, 5vw, 2rem);--wp--preset--spacing--40: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);--wp--preset--spacing--50: clamp(2.5rem, 8vw, 4.5rem);--wp--preset--spacing--60: clamp(3.75rem, 10vw, 7rem);--wp--preset--spacing--70: clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem);--wp--preset--spacing--80: clamp(7rem, 14vw, 11rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 650px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.5rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5rem;}:root :where(.is-layout-grid){gap: 1.5rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: 1.6;--wp--style--root--padding-top: var(--wp--preset--spacing--40);--wp--style--root--padding-right: var(--wp--preset--spacing--30);--wp--style--root--padding-bottom: var(--wp--preset--spacing--40);--wp--style--root--padding-left: var(--wp--preset--spacing--30);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast);text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}:root :where(a:where(:not(.wp-element-button)):focus){text-decoration: underline dashed;}:root :where(a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--secondary);text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;line-height: 1.4;}h1{font-size: clamp(2.032rem, 2.032rem + ((1vw - 0.2rem) * 2.896), 3.625rem);line-height: 1.2;}h2{font-size: clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem);line-height: 1.2;}h3{font-size: var(--wp--preset--font-size--x-large);}h4{font-size: var(--wp--preset--font-size--large);}h5{font-size: var(--wp--preset--font-size--medium);font-weight: 700;text-transform: uppercase;}h6{font-size: var(--wp--preset--font-size--medium);text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--primary);border-radius: 0;border-width: 0;color: var(--wp--preset--color--contrast);font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}:root :where(.wp-element-button:visited, .wp-block-button__link:visited){color: var(--wp--preset--color--contrast);}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){background-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--base);}:root :where(.wp-element-button:active, .wp-block-button__link:active){background-color: var(--wp--preset--color--secondary);color: var(--wp--preset--color--base);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link rel="stylesheet" id="elementor-icons-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/css/frontend-lite.min.css" media="all">
+<link rel="stylesheet" id="swiper-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-4-css" href="https://hiagofullstack.github.io/wp-content/uploads/elementor/css/post-4.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="https://hiagofullstack.github.io/wp-content/uploads/elementor/css/global.css" media="all">
+<link rel="stylesheet" id="elementor-post-8-css" href="https://hiagofullstack.github.io/wp-content/uploads/elementor/css/post-8.css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap&ver=6.7.1" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+
+
+
+
+
+			<meta name="theme-color" content="#070707">
+			<style class="wp-fonts-local">
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:block;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:block;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:block;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('https://hiagofullstack.github.io/wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
+<body class="home page-template page-template-elementor_canvas page page-id-8 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-8">
+			<div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-40fc5d7 elementor-section-height-min-height main elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="40fc5d7" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b0de49" data-id="3b0de49" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bfebe0d elementor-widget elementor-widget-image" data-id="bfebe0d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 08-12-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img fetchpriority="high" decoding="async" width="666" height="375" src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/Design_sem_nome__1_-removebg-preview.png" class="attachment-large size-large wp-image-217" alt="" srcset="https://hiagofullstack.github.io/wp-content/uploads/2023/12/Design_sem_nome__1_-removebg-preview.png 666w,https://hiagofullstack.github.io/wp-content/uploads/2023/12/Design_sem_nome__1_-removebg-preview-300x169.png 300w" sizes="(max-width: 666px) 100vw, 666px">															</div>
+				</div>
+				<div class="elementor-element elementor-element-f4e1e79 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="f4e1e79" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 08-12-2023 */
+.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));height:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#69727d;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#69727d}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-9386b56" href="https://www.linkedin.com/in/hiagofullstack" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-behance elementor-repeater-item-a721be9" href="https://www.behance.net/hiagofullstack" target="_blank">
+						<span class="elementor-screen-only">Behance</span>
+						<i class="fab fa-behance"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-github elementor-repeater-item-7b2e3cf" href="https://github.com/hiagofullstack" target="_blank">
+						<span class="elementor-screen-only">Github</span>
+						<i class="fab fa-github"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-ae55394" href="https://www.instagram.com/hiagofullstack/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-926f161 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-spacer" data-id="926f161" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 08-12-2023 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-620cdb0" data-id="620cdb0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a55bd24 elementor-widget elementor-widget-heading" data-id="a55bd24" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 08-12-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><p class="elementor-heading-title elementor-size-default"><span class="purple">Olá,</span> me chamo Hiago de Oliveira,</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bee5d2b typing-effect elementor-widget elementor-widget-heading" data-id="bee5d2b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">e sou <span></span></p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9362cc4 elementor-widget elementor-widget-heading" data-id="9362cc4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Transformando ideias em soluções digitais de alto impacto para empresas e negócios há mais de 8 anos.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-155d026 elementor-widget elementor-widget-html" data-id="155d026" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<style>
+    .typing-effect {
+     
+        color: #FFFFFF;
+        font-size: 38px;
+        font-weight: 700;
+
+
+    }
+    .typing-effect span {
+        color: #8D1CCD;
+    }
+    
+    @media (max-width: 768px){
+        .typing-effect {
+            height: auto;
+        }
+    }
+</style>
+
+<script>
+  let text1 = "Desenvolvedor Full-Stack";
+  let text2 = "Web Designer";
+  let text3 = "Gestor de tráfego";
+  let index = 0; // Inicie o índice em 0
+  let currentText = text1; // Comece com o primeiro texto
+
+  const h2 = document.querySelector('.typing-effect span');
+
+  function typeEffect() {
+    h2.textContent = currentText.slice(0, index);
+
+    index++;
+
+    if (index > currentText.length) {
+      index = 0;
+
+      // Alterne entre os textos
+      if (currentText === text1) {
+        currentText = text2;
+      } /*else if (currentText === text2) {
+        currentText = text3;
+      }*/ else {
+        currentText = text1;
+      }
+    }
+
+    setTimeout(typeEffect, 100); // Ajuste o tempo conforme necessário
+  }
+
+  typeEffect();
+</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3433a9c elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="3433a9c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-lg" href="https://api.whatsapp.com/send?phone=5521971661729&text=Ol%C3%A1%2C%20vim%20do%20H7M%C3%ADdia" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">ENTRE EM CONTATO COMIGO</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7b56ee0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b56ee0" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6740bc4" data-id="6740bc4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d88e40c elementor-widget elementor-widget-heading" data-id="d88e40c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><font color="#8d1ccd">Minhas </font>Skills</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8e63e2f elementor-widget elementor-widget-heading" data-id="8e63e2f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Algumas das minhas habilidades...</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5389e10 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5389e10" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-322fa2f" data-id="322fa2f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-353229a elementor-view-default elementor-widget elementor-widget-icon" data-id="353229a" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-js"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-601df6c elementor-widget elementor-widget-heading" data-id="601df6c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Javascript</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-8f97a62" data-id="8f97a62" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-130c683 elementor-view-default elementor-widget elementor-widget-icon" data-id="130c683" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-node-js"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a9e9866 elementor-widget elementor-widget-heading" data-id="a9e9866" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Node JS</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-1db1736" data-id="1db1736" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5e35c23 elementor-view-default elementor-widget elementor-widget-icon" data-id="5e35c23" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-react"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5c35b83 elementor-widget elementor-widget-heading" data-id="5c35b83" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">React JS</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-86e270b" data-id="86e270b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c555137 elementor-view-default elementor-widget elementor-widget-icon" data-id="c555137" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-html5"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-65effa2 elementor-widget elementor-widget-heading" data-id="65effa2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">HTML5</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-e1c29cb" data-id="e1c29cb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7ac9ac7 elementor-view-default elementor-widget elementor-widget-icon" data-id="7ac9ac7" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-css3"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e64246f elementor-widget elementor-widget-heading" data-id="e64246f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">CSS3</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-05dbc00" data-id="05dbc00" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3fc90ec elementor-view-default elementor-widget elementor-widget-icon" data-id="3fc90ec" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-bootstrap"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1322225 elementor-widget elementor-widget-heading" data-id="1322225" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Bootstrap</p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-9c58ca4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="9c58ca4" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-a3c2015" data-id="a3c2015" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1ecbbf1 elementor-view-default elementor-widget elementor-widget-icon" data-id="1ecbbf1" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-php"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-684a1e4 elementor-widget elementor-widget-heading" data-id="684a1e4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">PHP</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-361f865" data-id="361f865" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-81e7208 elementor-view-default elementor-widget elementor-widget-icon" data-id="81e7208" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-database"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4ff3f7f elementor-widget elementor-widget-heading" data-id="4ff3f7f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">MySQL</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-204fbde" data-id="204fbde" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d5181f8 elementor-view-default elementor-widget elementor-widget-icon" data-id="d5181f8" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-fire-alt"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4c0d417 elementor-widget elementor-widget-heading" data-id="4c0d417" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">CodeIgniter</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-298b539" data-id="298b539" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fc63e70 elementor-view-default elementor-widget elementor-widget-icon" data-id="fc63e70" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-laravel"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3c7d99d elementor-widget elementor-widget-heading" data-id="3c7d99d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Laravel</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-5fc72ee" data-id="5fc72ee" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2e939ec elementor-view-default elementor-widget elementor-widget-icon" data-id="2e939ec" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-python"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b8453b9 elementor-widget elementor-widget-heading" data-id="b8453b9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Python</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-1b8c4eb" data-id="1b8c4eb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c4b6c15 elementor-view-default elementor-widget elementor-widget-icon" data-id="c4b6c15" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fab fa-wordpress"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-376871d elementor-widget elementor-widget-heading" data-id="376871d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">WordPress</p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4bcae68 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bcae68" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3c51542" data-id="3c51542" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9fd381d elementor-widget elementor-widget-heading" data-id="9fd381d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><font color="#8d1ccd">Meu </font>Portfólio</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5adfdc7 elementor-widget elementor-widget-heading" data-id="5adfdc7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Alguns dos meus projetos mais interessantes...</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4039c81 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4039c81" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f34c220" data-id="f34c220" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-10806b5 border elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="10806b5" data-element_type="widget" data-settings='{"slides_to_show":"1","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.18.0 - 08-12-2023 */
+.elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>		<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="cats" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTExLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9jYXRzLmpwZyIsInNsaWRlc2hvdyI6IjEwODA2YjUifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/cats.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/cats.jpg" alt="cats"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="pombochat-2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTEyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wb21ib2NoYXQtMi5qcGciLCJzbGlkZXNob3ciOiIxMDgwNmI1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-2.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-2.jpg" alt="pombochat-2"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="pombochat-3" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTEzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wb21ib2NoYXQtMy5qcGciLCJzbGlkZXNob3ciOiIxMDgwNmI1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-3.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-3.jpg" alt="pombochat-3"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="pombochat-4" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTE0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wb21ib2NoYXQtNC5qcGciLCJzbGlkZXNob3ciOiIxMDgwNmI1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-4.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-4.jpg" alt="pombochat-4"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="pombochat-5" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTE1LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wb21ib2NoYXQtNS5qcGciLCJzbGlkZXNob3ciOiIxMDgwNmI1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-5.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-5.jpg" alt="pombochat-5"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="pombochat-6" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTE2LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wb21ib2NoYXQtNi5qcGciLCJzbGlkZXNob3ciOiIxMDgwNmI1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-6.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-6.jpg" alt="pombochat-6"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="10806b5" data-elementor-lightbox-title="pombochat-7" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTE3LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wb21ib2NoYXQtNy5qcGciLCJzbGlkZXNob3ciOiIxMDgwNmI1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-7.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pombochat-7.jpg" alt="pombochat-7"></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2a86849" data-id="2a86849" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-62f12a6 elementor-widget__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="62f12a6" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="62f12a6" data-elementor-lightbox-title="pdv" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTIxLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wZHYuanBnIiwic2xpZGVzaG93IjoiNjJmMTJhNiJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv.jpg" alt="pdv"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="62f12a6" data-elementor-lightbox-title="pdv2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTIyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wZHYyLmpwZyIsInNsaWRlc2hvdyI6IjYyZjEyYTYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv2.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv2.jpg" alt="pdv2"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="62f12a6" data-elementor-lightbox-title="pdv3" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTIzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wZHYzLmpwZyIsInNsaWRlc2hvdyI6IjYyZjEyYTYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv3.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv3.jpg" alt="pdv3"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="62f12a6" data-elementor-lightbox-title="pdv4" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTI0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9wZHY0LmpwZyIsInNsaWRlc2hvdyI6IjYyZjEyYTYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv4.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/pdv4.jpg" alt="pdv4"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="62f12a6" data-elementor-lightbox-title="reserva" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTI1LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjVcLzAxXC9yZXNlcnZhLmpwZyIsInNsaWRlc2hvdyI6IjYyZjEyYTYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2025/01/reserva.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2025/01/reserva.jpg" alt="reserva"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5469f19 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5469f19" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-694c392" data-id="694c392" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-86bbe97 border elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="86bbe97" data-element_type="widget" data-settings='{"slides_to_show":"1","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="86bbe97" data-elementor-lightbox-title="xgreen-user" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODkzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC94Z3JlZW4tdXNlci5qcGciLCJzbGlkZXNob3ciOiI4NmJiZTk3In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen-user.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen-user.jpg" alt="xgreen-user"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="86bbe97" data-elementor-lightbox-title="xgreen-user2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODkyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC94Z3JlZW4tdXNlcjIuanBnIiwic2xpZGVzaG93IjoiODZiYmU5NyJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen-user2.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen-user2.jpg" alt="xgreen-user2"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="86bbe97" data-elementor-lightbox-title="xgreen-adm" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC94Z3JlZW4tYWRtLmpwZyIsInNsaWRlc2hvdyI6Ijg2YmJlOTcifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen-adm.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen-adm.jpg" alt="xgreen-adm"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="86bbe97" data-elementor-lightbox-title="xgreen2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk1LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC94Z3JlZW4yLmpwZyIsInNsaWRlc2hvdyI6Ijg2YmJlOTcifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen2.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen2.jpg" alt="xgreen2"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="86bbe97" data-elementor-lightbox-title="xgreen1" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk2LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC94Z3JlZW4xLmpwZyIsInNsaWRlc2hvdyI6Ijg2YmJlOTcifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen1.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/xgreen1.jpg" alt="xgreen1"></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e6ceca1" data-id="e6ceca1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d7c0c16 elementor-widget__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="d7c0c16" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats7" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk3LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzNy5qcGciLCJzbGlkZXNob3ciOiJkN2MwYzE2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats7.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats7.jpg" alt="cats7"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats6" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk4LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzNi5qcGciLCJzbGlkZXNob3ciOiJkN2MwYzE2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats6.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats6.jpg" alt="cats6"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats5" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk5LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzNS5qcGciLCJzbGlkZXNob3ciOiJkN2MwYzE2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats5.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats5.jpg" alt="cats5"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats4" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAwLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzNC5qcGciLCJzbGlkZXNob3ciOiJkN2MwYzE2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats4.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats4.jpg" alt="cats4"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats3" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAxLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzMy5qcGciLCJzbGlkZXNob3ciOiJkN2MwYzE2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats3.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats3.jpg" alt="cats3"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzMi5qcGciLCJzbGlkZXNob3ciOiJkN2MwYzE2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats2.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats2.jpg" alt="cats2"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 7"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="d7c0c16" data-elementor-lightbox-title="cats" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzAyXC9jYXRzLmpwZyIsInNsaWRlc2hvdyI6ImQ3YzBjMTYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2024/02/cats.jpg" alt="cats"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-35873df elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="35873df" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d49d491" data-id="d49d491" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5b20b77 border elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="5b20b77" data-element_type="widget" data-settings='{"slides_to_show":"1","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5b20b77" data-elementor-lightbox-title="22k2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTc2LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC8yMmsyLmpwZyIsInNsaWRlc2hvdyI6IjViMjBiNzcifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/22k2.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/22k2.jpg" alt="22k2"></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5b20b77" data-elementor-lightbox-title="22k" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTc3LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC8yMmsuanBnIiwic2xpZGVzaG93IjoiNWIyMGI3NyJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/22k.jpg"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/22k.jpg" alt="22k"></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-599943a" data-id="599943a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-357b706 elementor-widget__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="357b706" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 3"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="357b706" data-elementor-lightbox-title="4c9160143654687-627e369beb07e" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDk2LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC80YzkxNjAxNDM2NTQ2ODctNjI3ZTM2OWJlYjA3ZS5qcGciLCJzbGlkZXNob3ciOiIzNTdiNzA2In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/4c9160143654687-627e369beb07e.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/4c9160143654687-627e369beb07e.jpg" alt="4c9160143654687-627e369beb07e"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 3"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="357b706" data-elementor-lightbox-title="cats" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTE0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXRzLmpwZyIsInNsaWRlc2hvdyI6IjM1N2I3MDYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cats.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cats.jpg" alt="cats"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 3"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="357b706" data-elementor-lightbox-title="plataforma" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTE1LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9wbGF0YWZvcm1hLmpwZyIsInNsaWRlc2hvdyI6IjM1N2I3MDYifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/plataforma.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/plataforma.jpg" alt="plataforma"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-73f4851 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="73f4851" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-61bbe85" data-id="61bbe85" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e8133df elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="e8133df" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="e8133df" data-elementor-lightbox-title="moneybet" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTY1LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9tb25leWJldC5qcGciLCJzbGlkZXNob3ciOiJlODEzM2RmIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/moneybet.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/moneybet.jpg" alt="moneybet"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="e8133df" data-elementor-lightbox-title="cassino2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYxLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXNzaW5vMi5qcGciLCJzbGlkZXNob3ciOiJlODEzM2RmIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino2.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino2.jpg" alt="cassino2"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="e8133df" data-elementor-lightbox-title="cassino3" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXNzaW5vMy5qcGciLCJzbGlkZXNob3ciOiJlODEzM2RmIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino3.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino3.jpg" alt="cassino3"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="e8133df" data-elementor-lightbox-title="cassino4" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXNzaW5vNC5qcGciLCJzbGlkZXNob3ciOiJlODEzM2RmIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino4.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino4.jpg" alt="cassino4"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="e8133df" data-elementor-lightbox-title="cassino5" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTY0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXNzaW5vNS5qcGciLCJzbGlkZXNob3ciOiJlODEzM2RmIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino5.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cassino5.jpg" alt="cassino5"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-39510a0 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="39510a0" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="39510a0" data-elementor-lightbox-title="cats" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTUyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXRzLTEuanBnIiwic2xpZGVzaG93IjoiMzk1MTBhMCJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cats-1.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cats-1.jpg" alt="cats"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="39510a0" data-elementor-lightbox-title="dupoc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTUzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9kdXBvYy5qcGciLCJzbGlkZXNob3ciOiIzOTUxMGEwIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/dupoc.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/dupoc.jpg" alt="dupoc"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9fc6fa2" data-id="9fc6fa2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0294d4e elementor-widget__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="0294d4e" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0294d4e" data-elementor-lightbox-title="9ac3c04e-94a9-49d8-a71d-51c23b6158ca" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYwLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC85YWMzYzA0ZS05NGE5LTQ5ZDgtYTcxZC01MWMyM2I2MTU4Y2EuanBlZyIsInNsaWRlc2hvdyI6IjAyOTRkNGUifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/9ac3c04e-94a9-49d8-a71d-51c23b6158ca.jpeg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/9ac3c04e-94a9-49d8-a71d-51c23b6158ca.jpeg" alt="9ac3c04e-94a9-49d8-a71d-51c23b6158ca"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0294d4e" data-elementor-lightbox-title="16b8d596-f6ba-4f70-9452-548d4c66e9b0 (1)" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTU0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC8xNmI4ZDU5Ni1mNmJhLTRmNzAtOTQ1Mi01NDhkNGM2NmU5YjAtMS5qcGciLCJzbGlkZXNob3ciOiIwMjk0ZDRlIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/16b8d596-f6ba-4f70-9452-548d4c66e9b0-1.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/16b8d596-f6ba-4f70-9452-548d4c66e9b0-1.jpg" alt="16b8d596-f6ba-4f70-9452-548d4c66e9b0 (1)"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 6"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0294d4e" data-elementor-lightbox-title="16b8d596-f6ba-4f70-9452-548d4c66e9b0" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTU1LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC8xNmI4ZDU5Ni1mNmJhLTRmNzAtOTQ1Mi01NDhkNGM2NmU5YjAuanBnIiwic2xpZGVzaG93IjoiMDI5NGQ0ZSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/16b8d596-f6ba-4f70-9452-548d4c66e9b0.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/16b8d596-f6ba-4f70-9452-548d4c66e9b0.jpg" alt="16b8d596-f6ba-4f70-9452-548d4c66e9b0"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 6"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0294d4e" data-elementor-lightbox-title="85ba81ae-eaa3-417a-8692-de36f6267f36" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTU2LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC84NWJhODFhZS1lYWEzLTQxN2EtODY5Mi1kZTM2ZjYyNjdmMzYuanBnIiwic2xpZGVzaG93IjoiMDI5NGQ0ZSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/85ba81ae-eaa3-417a-8692-de36f6267f36.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/85ba81ae-eaa3-417a-8692-de36f6267f36.jpg" alt="85ba81ae-eaa3-417a-8692-de36f6267f36"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 6"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0294d4e" data-elementor-lightbox-title="961e9107-9bb9-4120-bf9e-ea8f791dd48c (1)" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTU3LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC85NjFlOTEwNy05YmI5LTQxMjAtYmY5ZS1lYThmNzkxZGQ0OGMtMS5qcGciLCJzbGlkZXNob3ciOiIwMjk0ZDRlIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/961e9107-9bb9-4120-bf9e-ea8f791dd48c-1.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/961e9107-9bb9-4120-bf9e-ea8f791dd48c-1.jpg" alt="961e9107-9bb9-4120-bf9e-ea8f791dd48c (1)"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 6"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="0294d4e" data-elementor-lightbox-title="961e9107-9bb9-4120-bf9e-ea8f791dd48c" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTU4LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC85NjFlOTEwNy05YmI5LTQxMjAtYmY5ZS1lYThmNzkxZGQ0OGMuanBnIiwic2xpZGVzaG93IjoiMDI5NGQ0ZSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/961e9107-9bb9-4120-bf9e-ea8f791dd48c.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/961e9107-9bb9-4120-bf9e-ea8f791dd48c.jpg" alt="961e9107-9bb9-4120-bf9e-ea8f791dd48c"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4eb8ca2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4eb8ca2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9bccbc8" data-id="9bccbc8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fcb55e5 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="fcb55e5" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="fcb55e5" data-elementor-lightbox-title="freela" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODE0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9mcmVlbGEuanBnIiwic2xpZGVzaG93IjoiZmNiNTVlNSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/freela.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/freela.jpg" alt="freela"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="fcb55e5" data-elementor-lightbox-title="main-page" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODExLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9tYWluLXBhZ2UuanBnIiwic2xpZGVzaG93IjoiZmNiNTVlNSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/main-page.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/main-page.jpg" alt="main-page"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="fcb55e5" data-elementor-lightbox-title="proposal" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODEyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9wcm9wb3NhbC5qcGciLCJzbGlkZXNob3ciOiJmY2I1NWU1In0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/proposal.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/proposal.jpg" alt="proposal"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="fcb55e5" data-elementor-lightbox-title="cats" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODEzLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9jYXRzLTMuanBnIiwic2xpZGVzaG93IjoiZmNiNTVlNSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cats-3.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/cats-3.jpg" alt="cats"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cf4d155 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="cf4d155" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="cf4d155" data-elementor-lightbox-title="botdollar" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTY5LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9ib3Rkb2xsYXIuanBnIiwic2xpZGVzaG93IjoiY2Y0ZDE1NSJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar.jpg" alt="botdollar"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="cf4d155" data-elementor-lightbox-title="botdollar2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTcwLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9ib3Rkb2xsYXIyLmpwZyIsInNsaWRlc2hvdyI6ImNmNGQxNTUifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar2.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar2.jpg" alt="botdollar2"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="cf4d155" data-elementor-lightbox-title="botdollar3" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTcxLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9ib3Rkb2xsYXIzLmpwZyIsInNsaWRlc2hvdyI6ImNmNGQxNTUifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar3.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar3.jpg" alt="botdollar3"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 4"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="cf4d155" data-elementor-lightbox-title="botdollar4" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTcyLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9ib3Rkb2xsYXI0LmpwZyIsInNsaWRlc2hvdyI6ImNmNGQxNTUifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar4.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/botdollar4.jpg" alt="botdollar4"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b610c50" data-id="b610c50" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b965918 elementor-widget__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="b965918" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b965918" data-elementor-lightbox-title="1f9c67c6-3d44-4d63-b27a-e11ea41b8eef" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTY2LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC8xZjljNjdjNi0zZDQ0LTRkNjMtYjI3YS1lMTFlYTQxYjhlZWYuanBnIiwic2xpZGVzaG93IjoiYjk2NTkxOCJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/1f9c67c6-3d44-4d63-b27a-e11ea41b8eef.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/1f9c67c6-3d44-4d63-b27a-e11ea41b8eef.jpg" alt="1f9c67c6-3d44-4d63-b27a-e11ea41b8eef"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b965918" data-elementor-lightbox-title="a949c888-808f-450e-b1b9-500d6a2e5b10" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTY4LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9hOTQ5Yzg4OC04MDhmLTQ1MGUtYjFiOS01MDBkNmEyZTViMTAuanBnIiwic2xpZGVzaG93IjoiYjk2NTkxOCJ9" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/a949c888-808f-450e-b1b9-500d6a2e5b10.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/a949c888-808f-450e-b1b9-500d6a2e5b10.jpg" alt="a949c888-808f-450e-b1b9-500d6a2e5b10"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-26cc239 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="26cc239" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-dc32165" data-id="dc32165" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-27d3713 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="27d3713" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="27d3713" data-elementor-lightbox-title="empsi" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTczLCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9lbXBzaS5qcGciLCJzbGlkZXNob3ciOiIyN2QzNzEzIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/empsi.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/empsi.jpg" alt="empsi"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="27d3713" data-elementor-lightbox-title="empsi" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTc0LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9lbXBzaS0xLmpwZyIsInNsaWRlc2hvdyI6IjI3ZDM3MTMifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/empsi-1.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/empsi-1.jpg" alt="empsi"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-17bfc8a" data-id="17bfc8a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-37bb200 elementor-widget__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="37bb200" data-element_type="widget" data-settings='{"slides_to_show":"1","lazyload":"yes","navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","effect":"slide","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper swiper-image-stretch" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="37bb200" data-elementor-lightbox-title="5207a6114107241.6035192587cac" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTc4LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC81MjA3YTYxMTQxMDcyNDEuNjAzNTE5MjU4N2NhYy0xLmpwZyIsInNsaWRlc2hvdyI6IjM3YmIyMDAifQ%3D%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/5207a6114107241.6035192587cac-1.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/5207a6114107241.6035192587cac-1.jpg" alt="5207a6114107241.6035192587cac"><div class="swiper-lazy-preloader"></div></figure></a></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 2"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="37bb200" data-elementor-lightbox-title="portal" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTc5LCJ1cmwiOiJodHRwczpcL1wvaDdtaWRpYS5kZXZcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9wb3J0YWwtMy5qcGciLCJzbGlkZXNob3ciOiIzN2JiMjAwIn0%3D" href="https://hiagofullstack.github.io/wp-content/uploads/2023/12/portal-3.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="https://hiagofullstack.github.io/wp-content/uploads/2023/12/portal-3.jpg" alt="portal"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7a5dbb6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7a5dbb6" data-element_type="section" data-settings='{"background_background":"gradient"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-694ebb4" data-id="694ebb4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3b51b65 elementor-widget elementor-widget-heading" data-id="3b51b65" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><font color="#8d1ccd">Contate </font>Me</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2128bad elementor-widget elementor-widget-heading" data-id="2128bad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">E aí, vamos fechar um job? </h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-de5b65a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="de5b65a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1c393ca" data-id="1c393ca" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-56f90ea elementor-widget elementor-widget-heading" data-id="56f90ea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Entrar em contato</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b76e777 elementor-widget elementor-widget-heading" data-id="b76e777" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Telefone:</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cf63277 elementor-position-left elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="cf63277" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://h7midia.com.br/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">		<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="fas fa-phone"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<p class="elementor-icon-box-title">
+					<span>
+						+55 21 971965975					</span>
+				</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3bb7acb elementor-widget elementor-widget-heading" data-id="3bb7acb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">E-mail:</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cbe1d53 elementor-position-left elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="cbe1d53" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="far fa-envelope"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<p class="elementor-icon-box-title">
+					<span>
+						hiagodeoliveiratv@gmail.com					</span>
+				</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3687573 elementor-widget elementor-widget-heading" data-id="3687573" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Linkedin:</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-96afa1c elementor-position-left elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="96afa1c" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="fab fa-linkedin"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<p class="elementor-icon-box-title">
+					<span>
+						https://www.linkedin.com/in/hiagofullstack/					</span>
+				</p>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f3453f1 elementor-widget elementor-widget-heading" data-id="f3453f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Github:</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-600fb8c elementor-position-left elementor-mobile-position-left elementor-vertical-align-middle elementor-view-default elementor-widget elementor-widget-icon-box" data-id="600fb8c" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="fab fa-github"></i>				</span>
+			</div>
+						<div class="elementor-icon-box-content">
+				<p class="elementor-icon-box-title">
+					<span>
+						https://github.com/hiagofullstack					</span>
+				</p>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f398a89" data-id="f398a89" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b05200d elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="b05200d" data-element_type="widget" data-settings='{"step_next_label":"Pr\u00f3ximo","step_previous_label":"Anterior","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}' data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.11.1 - 15-02-2023 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:flex;flex-wrap:wrap}.e-form__buttons{flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:flex}.e-form__indicators{display:flex;justify-content:space-between;align-items:center;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators__indicator{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:flex;justify-content:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:flex;justify-content:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{order:3}.elementor-form .elementor-button>span{display:flex;justify-content:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}.elementor-select-wrapper .select-caret-down-wrapper{position:absolute;top:50%;transform:translateY(-50%);inset-inline-end:10px;pointer-events:none;font-size:11px}.elementor-select-wrapper .select-caret-down-wrapper svg{display:unset;width:1em;aspect-ratio:unset;fill:currentColor}.elementor-select-wrapper .select-caret-down-wrapper i{font-size:19px;line-height:2}.elementor-select-wrapper.remove-before:before{content:""!important}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="8">
+			<input type="hidden" name="form_id" value="b05200d">
+			<input type="hidden" name="referer_title" value="">
+
+							<input type="hidden" name="queried_id" value="8">
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+												<label for="form-field-name" class="elementor-field-label">
+								Nome							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nome Completo">
+											</div>
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_9fdee8e elementor-col-100 elementor-field-required">
+												<label for="form-field-field_9fdee8e" class="elementor-field-label">
+								Telefone (WhatsApp)							</label>
+														<input size="1" type="text" name="form_fields[field_9fdee8e]" id="form-field-field_9fdee8e" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Seu telefone com DDD" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+												<label for="form-field-message" class="elementor-field-label">
+								Mensagem							</label>
+						<textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Digite sua mensagem"></textarea>				</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-sm">
+						<span>
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Enviar</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<div class="elementor-element elementor-element-0cc9de3 elementor-widget elementor-widget-heading" data-id="0cc9de3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Desenvolvido com dedicação por Hiago de Oliveira, 2025 ❤️ </span>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Saltar para o conteúdo';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script src="https://hiagofullstack.github.io/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="https://hiagofullstack.github.io/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script src="https://hiagofullstack.github.io/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+<script src="https://hiagofullstack.github.io/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/hiagofullstack.github.io\/wp-admin\/admin-ajax.php","nonce":"2c9180dad0","urls":{"assets":"https:\/\/hiagofullstack.github.io\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/hiagofullstack.github.io\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/hiagofullstack.github.io\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor-pro/assets/js/frontend.min.js" id="elementor-pro-frontend-js"></script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" id="elementor-waypoints-js"></script>
+<script src="https://hiagofullstack.github.io/wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fix\u00e1-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"\u00c9cr\u00e3 Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Seguinte","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile ao alto","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile ao baixo","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.18.2","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"theme_builder_v2":true,"block_editor_assets_optimize":true,"landing-pages":true,"e_image_loading_optimization":true,"e_global_styleguide":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/hiagofullstack.github.io\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"gradient","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":8,"title":"H7M%C3%ADdia%20%E2%80%93%20Desenvolvimento%20de%20sites%2C%20sistemas%2C%20aplicativos%2C%20bots%20e%20automa%C3%A7%C3%A3o%E2%80%A6","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+<script src="https://hiagofullstack.github.io/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+	</body>
 </html>
