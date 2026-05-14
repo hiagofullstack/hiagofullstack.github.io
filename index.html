@@ -58,6 +58,23 @@
     background: radial-gradient(ellipse at 30% 0%, rgba(131,38,212,0.20) 0%, transparent 55%);
     pointer-events: none;
   }
+  .hero-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 50px; align-items: center; }
+  @media (max-width: 860px) { .hero-layout { grid-template-columns: 1fr; gap: 36px; } }
+  .hero-photo { position: relative; display: flex; justify-content: center; }
+  .hero-photo::before {
+    content: ''; position: absolute; width: 320px; height: 320px;
+    background: var(--gradient); border-radius: 50%; filter: blur(70px); opacity: 0.35;
+    z-index: 0;
+  }
+  .hero-photo img {
+    position: relative; z-index: 1; width: 100%; max-width: 360px;
+    border-radius: 20px; object-fit: cover;
+  }
+  @media (max-width: 860px) {
+    .hero-photo { order: -1; }
+    .hero-photo img { max-width: 240px; }
+    .hero-photo::before { width: 220px; height: 220px; }
+  }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 8px;
     background: rgba(131,38,212,0.12); border: 1px solid rgba(131,38,212,0.25);
@@ -126,23 +143,30 @@
   .project-tag { display: inline-block; font-size: 10px; font-weight: 700; color: var(--purple-light); background: rgba(131,38,212,0.12); border: 1px solid rgba(131,38,212,0.25); padding: 3px 9px; border-radius: 999px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
   .project-head h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
   .project-head p { color: var(--text-muted); font-size: 13.5px; }
-  /* galeria de imagens — scroll horizontal */
+  /* galeria de imagens — carrossel com fade automático */
   .gallery {
-    display: flex; gap: 10px; overflow-x: auto; padding: 2px 22px 22px;
-    scroll-snap-type: x mandatory; margin-top: auto;
+    position: relative; margin: 2px 22px 22px; margin-top: auto;
+    height: 200px; border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border); background: var(--bg);
   }
-  .gallery::-webkit-scrollbar { height: 5px; }
-  .gallery::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
   .gallery img {
-    height: 150px; width: auto; border-radius: 10px; border: 1px solid var(--border);
-    scroll-snap-align: start; flex-shrink: 0; cursor: zoom-in;
-    transition: transform 0.2s ease; object-fit: cover;
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; opacity: 0; cursor: zoom-in;
+    transition: opacity 0.7s ease;
   }
-  .gallery img:hover { transform: scale(1.03); }
+  .gallery img.active { opacity: 1; }
+  .gallery-dots {
+    position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 5px; z-index: 2;
+  }
+  .gallery-dots span {
+    width: 6px; height: 6px; border-radius: 50%; cursor: pointer;
+    background: rgba(255,255,255,0.35); transition: all 0.3s ease;
+  }
+  .gallery-dots span.active { background: #fff; width: 18px; border-radius: 3px; }
   @media (max-width: 600px) {
-    .gallery img { height: 140px; }
+    .gallery { height: 170px; margin: 2px 18px 18px; }
     .project-head { padding: 20px 18px 14px; }
-    .gallery { padding: 2px 18px 18px; }
   }
 
   /* LIGHTBOX */
@@ -189,7 +213,7 @@
 
 <nav>
   <div class="container">
-    <a href="#" class="logo">Hiago<span class="dot">.</span>dev</a>
+    <a href="#" class="logo">hiago<span class="dot">fullstack</span></a>
     <div class="nav-links">
       <a href="#skills">Habilidades</a>
       <a href="#projetos">Projetos</a>
@@ -201,15 +225,22 @@
 
 <header class="hero">
   <div class="container">
-    <div class="hero-badge">⚡ Desenvolvedor Full Stack · +10 anos</div>
-    <h1>Transformando ideias em <span class="gradient">soluções digitais</span> de alto impacto</h1>
-    <p>Desenvolvo sistemas web completos para empresas e negócios há mais de 10 anos — do back-end à interface, com foco em performance e resultado.</p>
-    <div class="hero-cta">
-      <a href="https://api.whatsapp.com/send?phone=5521994254432&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site" class="btn-primary">
-        Vamos fechar um job?
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#projetos" class="btn-secondary">Ver projetos</a>
+    <div class="hero-layout">
+      <div>
+        <div class="hero-badge">⚡ Desenvolvedor Full Stack · +10 anos</div>
+        <h1>Transformando ideias em <span class="gradient">soluções digitais</span> de alto impacto</h1>
+        <p>Desenvolvo sistemas web completos para empresas e negócios há mais de 10 anos — do back-end à interface, com foco em performance e resultado.</p>
+        <div class="hero-cta">
+          <a href="https://api.whatsapp.com/send?phone=5521994254432&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site" class="btn-primary">
+            Vamos fechar um job?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#projetos" class="btn-secondary">Ver projetos</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="wp-content/uploads/2023/12/Design_sem_nome__1_-removebg-preview.png" alt="Hiago de Oliveira">
+      </div>
     </div>
     <div class="stats">
       <div class="stat"><div class="stat-value">+10</div><div class="stat-label">Anos de experiência</div></div>
@@ -494,6 +525,41 @@
 <div class="lightbox" id="lightbox"><img src="" alt=""></div>
 
 <script>
+  // Galerias com rotação automática + indicadores
+  document.querySelectorAll('.gallery').forEach((gallery, gi) => {
+    const imgs = Array.from(gallery.querySelectorAll('img'));
+    if (!imgs.length) return;
+
+    let current = 0;
+    imgs[0].classList.add('active');
+
+    // cria os indicadores (dots)
+    const dots = document.createElement('div');
+    dots.className = 'gallery-dots';
+    imgs.forEach((_, i) => {
+      const dot = document.createElement('span');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', e => { e.stopPropagation(); show(i); });
+      dots.appendChild(dot);
+    });
+    gallery.appendChild(dots);
+
+    function show(i) {
+      imgs[current].classList.remove('active');
+      dots.children[current].classList.remove('active');
+      current = (i + imgs.length) % imgs.length;
+      imgs[current].classList.add('active');
+      dots.children[current].classList.add('active');
+    }
+
+    // auto-rotação — stagger por galeria pra não piscar tudo junto
+    if (imgs.length > 1) {
+      setTimeout(() => {
+        setInterval(() => show(current + 1), 3500);
+      }, gi * 600);
+    }
+  });
+
   // Lightbox — clica na imagem da galeria e amplia
   const lb = document.getElementById('lightbox');
   const lbImg = lb.querySelector('img');
