@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hiago de Oliveira — Desenvolvedor Full Stack</title>
+<meta name="description" content="Desenvolvedor Full Stack há mais de 10 anos. Transformando ideias em soluções digitais de alto impacto para empresas e negócios.">
+<meta name="theme-color" content="#8326d4">
+<link rel="icon" type="image/png" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --purple: #8326d4;
+    --purple-light: #a855f7;
+    --bg: #0a0a0e;
+    --bg-soft: #15151c;
+    --bg-card: #1a1a22;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.14);
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+    --green: #10b981;
+    --gradient: linear-gradient(135deg, #8326d4 0%, #a855f7 100%);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg); color: var(--text);
+    line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  a { color: inherit; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    background: rgba(10,10,14,0.7); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .container { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-size: 17px; font-weight: 800; letter-spacing: -0.02em; text-decoration: none; }
+  .logo .dot { color: var(--purple-light); }
+  .nav-links { display: flex; gap: 26px; align-items: center; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta { background: var(--gradient); color: #fff !important; padding: 9px 18px; border-radius: 8px; font-size: 14px; font-weight: 600; transition: transform 0.15s, box-shadow 0.15s; }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(131,38,212,0.35); }
+  @media (max-width: 720px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+  /* HERO */
+  .hero { padding: 150px 0 80px; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 30% 0%, rgba(131,38,212,0.20) 0%, transparent 55%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(131,38,212,0.12); border: 1px solid rgba(131,38,212,0.25);
+    padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    color: var(--purple-light); margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 6vw, 62px); font-weight: 800;
+    letter-spacing: -0.03em; line-height: 1.08; margin-bottom: 20px; max-width: 800px;
+  }
+  .hero h1 .gradient { background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p { font-size: clamp(16px, 2vw, 19px); color: var(--text-muted); max-width: 620px; margin-bottom: 36px; }
+  .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gradient); color: #fff !important;
+    padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 600;
+    text-decoration: none; cursor: pointer; border: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 6px 20px rgba(131,38,212,0.25);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(131,38,212,0.4); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.06); color: var(--text) !important;
+    padding: 14px 28px; border-radius: 12px; font-size: 15px; font-weight: 600;
+    text-decoration: none; border: 1px solid var(--border-strong); transition: background 0.15s;
+  }
+  .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+  /* STATS */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; max-width: 620px; margin-top: 56px; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,0.02); }
+  .stat { padding: 20px; text-align: center; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat-value { font-size: 26px; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.02em; }
+  .stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; font-weight: 500; }
+
+  /* SECTIONS */
+  section { padding: 90px 0; }
+  .section-head { margin-bottom: 48px; }
+  .section-tag { display: inline-block; color: var(--purple-light); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
+  .section-title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; }
+  .section-sub { color: var(--text-muted); font-size: 16px; margin-top: 10px; }
+
+  /* SKILLS */
+  .skills-section { background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .skill {
+    background: var(--bg-card); border: 1px solid var(--border);
+    padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 500;
+    color: var(--text); transition: all 0.18s ease;
+  }
+  .skill:hover { border-color: rgba(131,38,212,0.5); color: var(--purple-light); transform: translateY(-2px); }
+
+  /* PROJETOS — grid de cards */
+  .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  @media (max-width: 760px) { .projects-grid { grid-template-columns: 1fr; } }
+  .project {
+    background: var(--bg-soft); border: 1px solid var(--border);
+    border-radius: 18px; overflow: hidden;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    display: flex; flex-direction: column;
+  }
+  .project:hover { border-color: rgba(131,38,212,0.35); transform: translateY(-3px); }
+  .project-head { padding: 22px 22px 16px; }
+  .project-tag { display: inline-block; font-size: 10px; font-weight: 700; color: var(--purple-light); background: rgba(131,38,212,0.12); border: 1px solid rgba(131,38,212,0.25); padding: 3px 9px; border-radius: 999px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .project-head h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .project-head p { color: var(--text-muted); font-size: 13.5px; }
+  /* galeria de imagens — scroll horizontal */
+  .gallery {
+    display: flex; gap: 10px; overflow-x: auto; padding: 2px 22px 22px;
+    scroll-snap-type: x mandatory; margin-top: auto;
+  }
+  .gallery::-webkit-scrollbar { height: 5px; }
+  .gallery::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+  .gallery img {
+    height: 150px; width: auto; border-radius: 10px; border: 1px solid var(--border);
+    scroll-snap-align: start; flex-shrink: 0; cursor: zoom-in;
+    transition: transform 0.2s ease; object-fit: cover;
+  }
+  .gallery img:hover { transform: scale(1.03); }
+  @media (max-width: 600px) {
+    .gallery img { height: 140px; }
+    .project-head { padding: 20px 18px 14px; }
+    .gallery { padding: 2px 18px 18px; }
+  }
+
+  /* LIGHTBOX */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 100;
+    background: rgba(0,0,0,0.92); display: none;
+    align-items: center; justify-content: center; padding: 24px;
+    cursor: zoom-out;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 90vh; border-radius: 12px; }
+
+  /* CONTATO */
+  .contact-section { background: var(--bg-soft); border-top: 1px solid var(--border); }
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .contact-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px; text-decoration: none;
+    display: flex; align-items: center; gap: 14px; transition: all 0.18s ease;
+  }
+  .contact-card:hover { border-color: rgba(131,38,212,0.4); transform: translateY(-2px); }
+  .contact-icon {
+    width: 42px; height: 42px; border-radius: 11px; flex-shrink: 0;
+    background: rgba(131,38,212,0.12); color: var(--purple-light);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .contact-icon svg { width: 20px; height: 20px; }
+  .contact-card .label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+  .contact-card .value { font-size: 14px; color: var(--text); font-weight: 500; margin-top: 2px; word-break: break-all; }
+
+  /* FINAL CTA */
+  .final-cta {
+    text-align: center; padding: 100px 0;
+    background: linear-gradient(135deg, rgba(131,38,212,0.12) 0%, transparent 60%);
+    border-top: 1px solid var(--border);
+  }
+  .final-cta h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 14px; }
+  .final-cta p { color: var(--text-muted); font-size: 17px; margin-bottom: 30px; }
+
+  footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-dim); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="logo">Hiago<span class="dot">.</span>dev</a>
+    <div class="nav-links">
+      <a href="#skills">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <a href="https://api.whatsapp.com/send?phone=5521994254432&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site" class="nav-cta">Vamos conversar</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-badge">⚡ Desenvolvedor Full Stack · +10 anos</div>
+    <h1>Transformando ideias em <span class="gradient">soluções digitais</span> de alto impacto</h1>
+    <p>Desenvolvo sistemas web completos para empresas e negócios há mais de 10 anos — do back-end à interface, com foco em performance e resultado.</p>
+    <div class="hero-cta">
+      <a href="https://api.whatsapp.com/send?phone=5521994254432&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site" class="btn-primary">
+        Vamos fechar um job?
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#projetos" class="btn-secondary">Ver projetos</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-value">+10</div><div class="stat-label">Anos de experiência</div></div>
+      <div class="stat"><div class="stat-value">Full Stack</div><div class="stat-label">Back + Front</div></div>
+      <div class="stat"><div class="stat-value">∞</div><div class="stat-label">Ideias entregues</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">Stack</div>
+      <h2 class="section-title">Algumas das minhas habilidades</h2>
+      <p class="section-sub">Tecnologias que uso pra construir do zero ao deploy.</p>
+    </div>
+    <div class="skills">
+      <span class="skill">JavaScript</span>
+      <span class="skill">TypeScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Express</span>
+      <span class="skill">React Native</span>
+      <span class="skill">Next.js</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">PostgreSQL</span>
+      <span class="skill">Sequelize</span>
+      <span class="skill">REST APIs</span>
+      <span class="skill">WebSocket</span>
+      <span class="skill">Go</span>
+      <span class="skill">Docker</span>
+      <span class="skill">Nginx</span>
+      <span class="skill">Linux / VPS</span>
+      <span class="skill">Git</span>
+      <span class="skill">Integrações WhatsApp</span>
+      <span class="skill">IA / OpenAI</span>
+      <span class="skill">Tailwind CSS</span>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">Portfólio</div>
+      <h2 class="section-title">Alguns dos meus projetos mais interessantes</h2>
+      <p class="section-sub">Cada um nasceu de uma necessidade real e virou produto. Clique nas imagens pra ampliar.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- PomboChat -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Plataforma SaaS</span>
+          <h3>PomboChat</h3>
+          <p>Plataforma de atendimento via WhatsApp com IA, fluxos visuais, kanban de conversas e CRM.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2025/01/pombochat-2.jpg" alt="PomboChat 1" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pombochat-3.jpg" alt="PomboChat 2" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pombochat-4.jpg" alt="PomboChat 3" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pombochat-5.jpg" alt="PomboChat 4" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pombochat-6.jpg" alt="PomboChat 5" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pombochat-7.jpg" alt="PomboChat 6" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Sistema PDV -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Sistema web</span>
+          <h3>Sistema PDV</h3>
+          <p>Ponto de venda completo — controle de vendas, produtos, caixa e relatórios.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2025/01/pdv.jpg" alt="PDV 1" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pdv2.jpg" alt="PDV 2" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pdv3.jpg" alt="PDV 3" loading="lazy">
+          <img src="wp-content/uploads/2025/01/pdv4.jpg" alt="PDV 4" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Sistema de Reservas -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Sistema web</span>
+          <h3>Sistema de Reservas</h3>
+          <p>Plataforma de agendamento e reservas online com gestão de agenda em tempo real.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2025/01/reserva.jpg" alt="Reservas" loading="lazy">
+        </div>
+      </div>
+
+      <!-- XGreen -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Sistema web</span>
+          <h3>XGreen</h3>
+          <p>Sistema com painel administrativo e área do usuário — gestão completa em dois ambientes.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2024/02/xgreen-user.jpg" alt="XGreen usuário" loading="lazy">
+          <img src="wp-content/uploads/2024/02/xgreen-user2.jpg" alt="XGreen usuário 2" loading="lazy">
+          <img src="wp-content/uploads/2024/02/xgreen-adm.jpg" alt="XGreen admin" loading="lazy">
+          <img src="wp-content/uploads/2024/02/xgreen1.jpg" alt="XGreen 1" loading="lazy">
+          <img src="wp-content/uploads/2024/02/xgreen2.jpg" alt="XGreen 2" loading="lazy">
+        </div>
+      </div>
+
+      <!-- MoneyBet -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Plataforma</span>
+          <h3>MoneyBet</h3>
+          <p>Plataforma de apostas online com cassino integrado e área do jogador.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/moneybet.jpg" alt="MoneyBet" loading="lazy">
+          <img src="wp-content/uploads/2023/12/cassino2.jpg" alt="Cassino 2" loading="lazy">
+          <img src="wp-content/uploads/2023/12/cassino3.jpg" alt="Cassino 3" loading="lazy">
+          <img src="wp-content/uploads/2023/12/cassino4.jpg" alt="Cassino 4" loading="lazy">
+          <img src="wp-content/uploads/2023/12/cassino5.jpg" alt="Cassino 5" loading="lazy">
+        </div>
+      </div>
+
+      <!-- BotDollar -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Automação</span>
+          <h3>BotDollar</h3>
+          <p>Bot automatizado para operações financeiras com painel de controle.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/botdollar.jpg" alt="BotDollar 1" loading="lazy">
+          <img src="wp-content/uploads/2023/12/botdollar2.jpg" alt="BotDollar 2" loading="lazy">
+          <img src="wp-content/uploads/2023/12/botdollar3.jpg" alt="BotDollar 3" loading="lazy">
+          <img src="wp-content/uploads/2023/12/botdollar4.jpg" alt="BotDollar 4" loading="lazy">
+        </div>
+      </div>
+
+      <!-- 22k -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Plataforma</span>
+          <h3>22k</h3>
+          <p>Plataforma web com interface moderna e foco em performance.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/22k.jpg" alt="22k 1" loading="lazy">
+          <img src="wp-content/uploads/2023/12/22k2.jpg" alt="22k 2" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Plataforma -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Sistema web</span>
+          <h3>Plataforma de Gestão</h3>
+          <p>Sistema de gestão web com dashboard e múltiplos módulos.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/plataforma.jpg" alt="Plataforma" loading="lazy">
+          <img src="wp-content/uploads/2023/12/4c9160143654687-627e369beb07e.jpg" alt="Plataforma 2" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Freela -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Plataforma</span>
+          <h3>Freela</h3>
+          <p>Plataforma de freelancers conectando profissionais e clientes.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/freela.jpg" alt="Freela 1" loading="lazy">
+          <img src="wp-content/uploads/2023/12/main-page.jpg" alt="Freela 2" loading="lazy">
+          <img src="wp-content/uploads/2023/12/proposal.jpg" alt="Freela 3" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Empsi -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Sistema web</span>
+          <h3>Empsi</h3>
+          <p>Sistema web sob medida para gestão de processos.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/empsi.jpg" alt="Empsi 1" loading="lazy">
+          <img src="wp-content/uploads/2023/12/empsi-1.jpg" alt="Empsi 2" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Dupoc -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Sistema web</span>
+          <h3>Dupoc</h3>
+          <p>Aplicação web desenvolvida sob demanda.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/dupoc.jpg" alt="Dupoc" loading="lazy">
+          <img src="wp-content/uploads/2023/12/cats-1.jpg" alt="Dupoc 2" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Portal -->
+      <div class="project">
+        <div class="project-head">
+          <span class="project-tag">Portal web</span>
+          <h3>Portal</h3>
+          <p>Portal web institucional com área de conteúdo e gestão.</p>
+        </div>
+        <div class="gallery">
+          <img src="wp-content/uploads/2023/12/portal-3.jpg" alt="Portal 1" loading="lazy">
+          <img src="wp-content/uploads/2023/12/5207a6114107241.6035192587cac-1.jpg" alt="Portal 2" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <p class="section-sub" style="margin-top:24px;text-align:center;font-size:14px;">
+      ⚠️ Revise os nomes e descrições dos projetos — alguns foram inferidos pelos nomes dos arquivos.
+    </p>
+  </div>
+</section>
+
+<section class="contact-section" id="contato">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-tag">Contato</div>
+      <h2 class="section-title">E aí, vamos fechar um job?</h2>
+      <p class="section-sub">Me chama por qualquer um dos canais — respondo rápido.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="https://api.whatsapp.com/send?phone=5521994254432&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site" class="contact-card" target="_blank" rel="noreferrer">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <div><div class="label">WhatsApp</div><div class="value">+55 21 99425-4432</div></div>
+      </a>
+      <a href="mailto:hiagodeoliveiratv@gmail.com" class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+        </div>
+        <div><div class="label">E-mail</div><div class="value">hiagodeoliveiratv@gmail.com</div></div>
+      </a>
+      <a href="https://linkedin.com/in/hiagofullstack" class="contact-card" target="_blank" rel="noreferrer">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div><div class="label">LinkedIn</div><div class="value">/in/hiagofullstack</div></div>
+      </a>
+      <a href="https://github.com/hiagofullstack" class="contact-card" target="_blank" rel="noreferrer">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <div><div class="label">GitHub</div><div class="value">/hiagofullstack</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <h2>Tem uma ideia? Bora tirar do papel.</h2>
+    <p>Me manda uma mensagem e a gente conversa sobre o seu projeto.</p>
+    <a href="https://api.whatsapp.com/send?phone=5521994254432&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site" class="btn-primary">
+      Falar no WhatsApp
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Hiago de Oliveira · Desenvolvedor Full Stack · © 2026
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+
+<script>
+  // Lightbox — clica na imagem da galeria e amplia
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', () => lb.classList.remove('open'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+</script>
+
+</body>
+</html>
