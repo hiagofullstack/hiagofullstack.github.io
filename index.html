@@ -259,7 +259,7 @@
       <a href="#skills">Habilidades</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
-      <a href="#contato" class="nav-cta js-wa">Vamos conversar</a>
+      <a href="#contato" class="nav-cta js-cta">Vamos conversar</a>
     </div>
   </div>
 </nav>
@@ -272,7 +272,7 @@
         <h1>Transformando ideias em <span class="gradient">soluções digitais</span> de alto impacto</h1>
         <p>Desenvolvo sistemas web completos para empresas e negócios há mais de 10 anos — do back-end à interface, com foco em performance e resultado.</p>
         <div class="hero-cta">
-          <a href="#contato" class="btn-primary js-wa">
+          <a href="#contato" class="btn-primary js-cta">
             Vamos fechar um job?
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -316,7 +316,7 @@
       <span class="skill">Nginx</span>
       <span class="skill">Linux / VPS</span>
       <span class="skill">Git</span>
-      <span class="skill">Integrações WhatsApp</span>
+      <span class="skill">APIs de Mensageria</span>
       <span class="skill">IA / OpenAI</span>
       <span class="skill">Tailwind CSS</span>
     </div>
@@ -337,7 +337,7 @@
         <div class="project-head">
           <span class="project-tag">Plataforma SaaS</span>
           <h3>PomboChat</h3>
-          <p>Plataforma de atendimento via WhatsApp com IA, fluxos visuais, kanban de conversas e CRM.</p>
+          <p>Plataforma de atendimento omnichannel com IA, fluxos visuais, kanban de conversas e CRM.</p>
         </div>
         <div class="gallery">
           <img src="wp-content/uploads/2025/01/pombochat-2.jpg" alt="PomboChat 1" loading="lazy">
@@ -516,35 +516,9 @@
       <h2 class="section-title">E aí, vamos fechar um job?</h2>
       <p class="section-sub">Me chama por qualquer um dos canais — respondo rápido.</p>
     </div>
-    <div class="contact-grid">
-      <a href="#" class="contact-card real-only js-wa">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-        </div>
-        <div><div class="label">Direto</div><div class="value js-wa-text"></div></div>
-      </a>
-      <a href="#" class="contact-card real-only js-mail">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
-        </div>
-        <div><div class="label">E-mail</div><div class="value js-mail-text"></div></div>
-      </a>
-      <a href="https://linkedin.com/in/hiagofullstack" class="contact-card real-only" target="_blank" rel="noreferrer">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </div>
-        <div><div class="label">LinkedIn</div><div class="value">/in/hiagofullstack</div></div>
-      </a>
-      <a href="https://github.com/hiagofullstack" class="contact-card real-only" target="_blank" rel="noreferrer">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </div>
-        <div><div class="label">GitHub</div><div class="value">/hiagofullstack</div></div>
-      </a>
-    </div>
+    <div class="contact-grid" id="contact-grid"></div>
     <div class="contact-fallback">
-      Disponível para freelas, vagas full-time e consultoria.<br>
-      Explore os projetos acima — os canais de contato aparecem quando você interage com a página.
+      Disponível para projetos, vagas full-time e consultoria.
     </div>
   </div>
 </section>
@@ -553,7 +527,7 @@
   <div class="container">
     <h2>Tem uma ideia? Bora tirar do papel.</h2>
     <p>Me manda uma mensagem e a gente conversa sobre o seu projeto.</p>
-    <a href="#contato" class="btn-primary js-wa">
+    <a href="#contato" class="btn-primary js-cta">
       Entre em contato
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
@@ -679,43 +653,66 @@
     else if (e.key === 'ArrowRight') lbStep(1);
   });
 
-  // Anti-crawler — só renderiza contato pra humano real
+  // Render condicional dos canais
   (function(){
-    function isBot() {
+    function _check() {
       if (navigator.webdriver) return true;
-      const ua = navigator.userAgent || '';
-      if (/HeadlessChrome|PhantomJS|SlimerJS|Puppeteer|Playwright|Selenium|bot\b|crawler|spider|preview|curl|wget|python|java\/|http-client/i.test(ua)) return true;
+      const u = navigator.userAgent || '';
+      if (/HeadlessChrome|PhantomJS|SlimerJS|Puppeteer|Playwright|Selenium|bot\b|crawler|spider|preview|curl|wget|python|java\/|http-client/i.test(u)) return true;
       if (!navigator.languages || navigator.languages.length === 0) return true;
       return false;
     }
-    if (isBot()) return;
+    if (_check()) return;
 
-    const c = String.fromCharCode;
-    const PHONE   = c(53,53,50,49,57,57,52,50,53,52,52,51,50);
-    const EMAIL   = c(104,105,97,103,111,100,101,111,108,105,118,101,105,114,97,116,118,64,103,109,97,105,108,46,99,111,109);
-    const WA_BASE = c(104,116,116,112,115,58,47,47,97,112,105,46,119,104,97,116,115,97,112,112,46,99,111,109,47,115,101,110,100,63,112,104,111,110,101,61);
-    const WA_TEXT = c(38,116,101,120,116,61,79,108,37,67,51,37,65,49,37,50,67,37,50,48,118,105,109,37,50,48,112,101,108,111,37,50,48,115,101,117,37,50,48,115,105,116,101);
-    const MAILTO  = c(109,97,105,108,116,111,58);
-    const PHONE_DISPLAY = c(43,53,53,32,50,49,32,57,57,52,50,53,45,52,52,51,50);
+    const x = String.fromCharCode;
+    const _a = x(53,53,50,49,57,57,52,50,53,52,52,51,50);
+    const _b = x(104,105,97,103,111,100,101,111,108,105,118,101,105,114,97,116,118,64,103,109,97,105,108,46,99,111,109);
+    const _c = x(104,116,116,112,115,58,47,47,97,112,105,46,119,104,97,116,115,97,112,112,46,99,111,109,47,115,101,110,100,63,112,104,111,110,101,61);
+    const _d = x(38,116,101,120,116,61,79,108,37,67,51,37,65,49,37,50,67,37,50,48,118,105,109,37,50,48,112,101,108,111,37,50,48,115,101,117,37,50,48,115,105,116,101);
+    const _e = x(109,97,105,108,116,111,58);
+    const _f = x(43,53,53,32,50,49,32,57,57,52,50,53,45,52,52,51,50);
+    const _g = x(104,116,116,112,115,58,47,47,108,105,110,107,101,100,105,110,46,99,111,109,47,105,110,47,104,105,97,103,111,102,117,108,108,115,116,97,99,107);
+    const _h = x(47,105,110,47,104,105,97,103,111,102,117,108,108,115,116,97,99,107);
+    const _i = x(104,116,116,112,115,58,47,47,103,105,116,104,117,98,46,99,111,109,47,104,105,97,103,111,102,117,108,108,115,116,97,99,107);
+    const _j = x(47,104,105,97,103,111,102,117,108,108,115,116,97,99,107);
+    const _k = x(87,104,97,116,115,65,112,112);
+    const _l = x(69,45,109,97,105,108);
+    const _m = x(76,105,110,107,101,100,73,110);
+    const _n = x(71,105,116,72,117,98);
 
-    function reveal() {
+    const _o = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>';
+    const _p = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>';
+    const _q = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>';
+    const _r = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>';
+
+    function mk(h, l, v, s, t) {
+      const tg = t ? ' target="_blank" rel="noreferrer"' : '';
+      return `<a href="${h}" class="contact-card"${tg}><div class="contact-icon">${s}</div><div><div class="label">${l}</div><div class="value">${v}</div></div></a>`;
+    }
+
+    function _go() {
       document.documentElement.classList.add('is-human');
-      const waUrl = WA_BASE + PHONE + WA_TEXT;
-      const mailUrl = MAILTO + EMAIL;
-      document.querySelectorAll('.js-wa').forEach(a => {
-        a.setAttribute('href', waUrl);
+      const u1 = _c + _a + _d;
+      const u2 = _e + _b;
+      document.querySelectorAll('.js-cta').forEach(a => {
+        a.setAttribute('href', u1);
         a.setAttribute('target', '_blank');
         a.setAttribute('rel', 'noreferrer');
       });
-      document.querySelectorAll('.js-mail').forEach(a => a.setAttribute('href', mailUrl));
-      document.querySelectorAll('.js-wa-text').forEach(el => el.textContent = PHONE_DISPLAY);
-      document.querySelectorAll('.js-mail-text').forEach(el => el.textContent = EMAIL);
+      const grid = document.getElementById('contact-grid');
+      if (grid) {
+        grid.innerHTML =
+          mk(u1, _k, _f, _o, true) +
+          mk(u2, _l, _b, _p, false) +
+          mk(_g, _m, _h, _q, true) +
+          mk(_i, _n, _j, _r, true);
+      }
     }
 
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', reveal);
+      document.addEventListener('DOMContentLoaded', _go);
     } else {
-      reveal();
+      _go();
     }
   })();
 </script>
